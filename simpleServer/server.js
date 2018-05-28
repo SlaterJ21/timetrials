@@ -12,28 +12,28 @@ app.use(bodyParser.json())
 
 app.use(express.static('public'))
 
-app.get('/api', (req,res,next){
+app.get('/api', (req,res,next) => {
   res.status(200).send("hello from api")
 })
 
-app.get('/public/', (req,res,next){
+app.get('/public/', (req,res,next) => {
   res.sendStatus(200)
 })
 
-app.get('/public/:id', (req,res,next){
+app.get('/public/:id', (req,res,next) => {
   res.status(200).send(req.params.id)
 })
 
-app.post('/public', (req,res,next){
+app.post('/public', (req,res,next) => {
   res.status(200).send(req.body)
 })
 
-app.patch('/public/:id', (req,res,next){
+app.patch('/public/:id', (req,res,next) => {
   let result = { id:req.params.id, name:req.body.name}
   res.status(200).send(req.params.id)
 })
 
-app.delete('/public/:id', (req,res,next){
+app.delete('/public/:id', (req,res,next) => {
   res.status(200).send(req.params.id)
 })
 
