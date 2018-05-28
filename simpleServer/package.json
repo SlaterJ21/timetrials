@@ -1,0 +1,19 @@
+{
+  "name": "simpleServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0"
+  }
+}
